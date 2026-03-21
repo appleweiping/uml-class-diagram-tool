@@ -1,80 +1,68 @@
-<<<<<<< HEAD
-UML Class Diagram Tool
+# UML Class Diagram Tool
 
-A lightweight UML (Unified Modeling Language) class diagram editor designed to create, edit, validate, and export class diagrams through an intuitive user interface.
+A desktop-based UML (Unified Modeling Language) class diagram editor that supports creation, validation, and export of diagrams with a user-friendly interface.
 
-Overview
+## ✨ Features
 
-This tool enables users to design UML class diagrams efficiently while ensuring correctness through validation rules. It supports saving diagrams, exporting them as images, and verifying structural and syntactic correctness based on UML standards and Java constraints.
+* 🧩 Create and edit UML class diagrams
+* ✅ Automatic validation based on UML and Java constraints
+* 🔄 Undo / Redo functionality
+* 💾 Save and load diagrams
+* 🖼 Export diagrams as images
 
-Features
-Interactive Diagram Editor
-Create and modify UML class diagrams
-Add classes, attributes, operations, and relationships
-Validation System
-Ensures compliance with UML specifications:
-Class names
-Attributes
-Operations
-Applies Java-based constraints on relationships:
-Example: a class can have at most one inheritance relationship
-File Support
-Save diagrams to file
-Load previously saved diagrams
-Export Functionality
-Export diagrams as images for use in external applications
-Undo/Redo Support
-Full history tracking of user actions
-Architecture & Design Patterns
+## 🧠 Validation Rules
 
-The system is built using several well-established design patterns:
+The tool ensures correctness using:
 
-Command Pattern
-Enables undo/redo functionality by encapsulating actions
-Observer Pattern
-Automatically triggers revalidation when the diagram structure changes
-Strategy Pattern
-Provides flexible serialization for supporting multiple file formats
-Use Cases
+* UML standards:
 
-The system supports multiple interaction scenarios, including:
+  * Class naming
+  * Attributes
+  * Operations
+* Java constraints:
 
-Creating and editing class diagrams
-Validating diagrams
-Saving and exporting diagrams
+  * Only one inheritance relationship per class
 
-Additionally, the system includes:
+## 🏗 Design Patterns Used
 
-Alternative flows for different user actions
-Exception handling for invalid operations
-Validation Rules
+* **Command Pattern**
 
-The validation system combines:
+  * Enables undo/redo functionality
 
-UML rules for structural correctness
-Java constraints for relationship restrictions
+* **Observer Pattern**
 
-Examples:
+  * Automatically revalidates diagrams when changes occur
 
-Valid class naming conventions
-Proper definition of attributes and methods
-Restrictions on inheritance relationships
-Getting Started
-Prerequisites
-Java (recommended version: Java 8 or higher)
-Running the Application
-Clone the repository
-Build the project
-Run the main application
-git clone <repository-url>
-cd <project-folder>
-# build & run depending on your setup
-Future Improvements
-Support for additional UML diagram types
-Enhanced UI/UX
-More advanced validation rules
-Plugin system for extensibility
-=======
-# uml-class-diagram-tool
-A UML class diagram editor with validation, undo/redo, and export functionality
->>>>>>> 3a3c457ac0190bb33f809fa45b3cc6e095c8b68c
+* **Strategy Pattern**
+
+  * Supports multiple serialization formats
+
+## 🚀 Getting Started
+
+### Requirements
+
+* Java 8+
+
+### Run the project
+
+```bash
+# compile & run (depending on your setup)
+```
+
+## 📁 Project Structure
+
+```
+src/
+ ├── model/
+ ├── view/
+ ├── controller/
+ ├── commands/
+ ├── validation/
+```
+
+## 📌 Future Improvements
+
+* Support more UML diagram types
+* Improve UI/UX
+* Add more validation rules
+* Plugin system for extensibility
