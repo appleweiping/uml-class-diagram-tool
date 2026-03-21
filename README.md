@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 UML Class Diagram Tool
 
 A lightweight UML (Unified Modeling Language) class diagram editor designed to create, edit, validate, and export class diagrams through an intuitive user interface.
@@ -73,3 +74,7 @@ Support for additional UML diagram types
 Enhanced UI/UX
 More advanced validation rules
 Plugin system for extensibility
+=======
+# uml-class-diagram-tool
+A UML class diagram editor with validation, undo/redo, and export functionality
+>>>>>>> 3a3c457ac0190bb33f809fa45b3cc6e095c8b68c

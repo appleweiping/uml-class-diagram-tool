@@ -22,6 +22,7 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+<<<<<<< HEAD
 /2IRR00_Group_Project/target/
 
 # Itellij IDEA
@@ -29,3 +30,5 @@ replay_pid*
 
 # Do not ignore root zip files as those are from intermediate submissions
 !/*.zip
+=======
+>>>>>>> 3a3c457ac0190bb33f809fa45b3cc6e095c8b68c
