@@ -1,68 +1,70 @@
 # UML Class Diagram Tool
 
-A desktop-based UML (Unified Modeling Language) class diagram editor that supports creation, validation, and export of diagrams with a user-friendly interface.
+JavaFX desktop application for creating, editing, validating, and exporting UML class diagrams. Built with Maven, 98 Java source files across model, view, controller, command, validation, and serialization layers.
 
-## ✨ Features
+---
 
-* 🧩 Create and edit UML class diagrams
-* ✅ Automatic validation based on UML and Java constraints
-* 🔄 Undo / Redo functionality
-* 💾 Save and load diagrams
-* 🖼 Export diagrams as images
+## Features
 
-## 🧠 Validation Rules
+- Create and edit UML class diagrams (classes, interfaces, abstract classes, enumerations)
+- Draw relationships: association, aggregation, composition, inheritance, realization, dependency
+- Automatic validation against UML standards and Java constraints
+- Undo / redo via Command pattern
+- Save and load diagrams (custom serialization format)
+- Export to PNG and JPG
 
-The tool ensures correctness using:
+---
 
-* UML standards:
+## Architecture
 
-  * Class naming
-  * Attributes
-  * Operations
-* Java constraints:
+The project follows MVC with three supporting patterns:
 
-  * Only one inheritance relationship per class
+| Pattern | Where | Purpose |
+|---------|-------|---------|
+| Command | `gui/commands/` | Undo/redo for create, delete, move, resize operations |
+| Observer | `listeners/` | Revalidation on diagram change |
+| Strategy | `serialization/` | Pluggable serializers (diagram format, PNG, JPG) |
 
-## 🏗 Design Patterns Used
+**Package structure:**
 
-* **Command Pattern**
+```
+com.mycompany.irr00_group_project/
+  App.java                    Entry point
+  representation/             Domain model (ClassNode, UMLConnection, DiagramData)
+  gui/                        JavaFX views and controllers
+    commands/                 Command objects for undo/redo
+  listeners/                  Observer/Subject interfaces and EventListener
+  serialization/              Diagram and image serializers
+  validation/                 UML and Java constraint validators
+```
 
-  * Enables undo/redo functionality
+---
 
-* **Observer Pattern**
+## Validation Rules
 
-  * Automatically revalidates diagrams when changes occur
+**UML constraints:**
+- Class names must be valid identifiers
+- Attribute and operation syntax checked
 
-* **Strategy Pattern**
+**Java constraints:**
+- Single inheritance per class (no multiple `extends`)
 
-  * Supports multiple serialization formats
+---
 
-## 🚀 Getting Started
+## Build and Run
 
-### Requirements
-
-* Java 8+
-
-### Run the project
+Requires Java 11+ and Maven.
 
 ```bash
-# compile & run (depending on your setup)
+cd irr00_group_Project
+mvn clean package
+mvn exec:java
 ```
 
-## 📁 Project Structure
+Or open in NetBeans / IntelliJ and run `App.java`.
 
-```
-src/
- ├── model/
- ├── view/
- ├── controller/
- ├── commands/
- ├── validation/
-```
+---
 
-## 📌 Future Improvements
+## License
 
-* Support more UML diagram types
-* Improve UI/UX
-* Add more validation rules
-* Plugin system for extensibility
+MIT
