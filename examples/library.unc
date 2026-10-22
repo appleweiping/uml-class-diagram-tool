@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="21.0.7" class="java.beans.XMLDecoder">
+ <object class="com.mycompany.irr00_group_project.serialization.DiagramDataFile" id="DiagramDataFile0">
+  <void property="canvasHeight">
+   <double>560.0</double>
+  </void>
+  <void property="canvasWidth">
+   <double>1240.0</double>
+  </void>
+  <void property="connections">
+   <void method="add">
+    <object class="com.mycompany.irr00_group_project.serialization.ConnectionFile">
+     <void property="midlineY">
+      <double>215.0</double>
+     </void>
+     <void property="sourceAnchor">
+      <object class="java.lang.Enum" id="Anchor0" method="valueOf">
+       <class>com.mycompany.irr00_group_project.gui.data.Anchor</class>
+       <string>TOP</string>
+      </object>
+     </void>
+     <void property="sourceNodeId">
+      <int>1</int>
+     </void>
+     <void property="sourceOffsetX">
+      <double>100.0</double>
+     </void>
+     <void property="targetAnchor">
+      <object class="java.lang.Enum" id="Anchor1" method="valueOf">
+       <class>com.mycompany.irr00_group_project.gui.data.Anchor</class>
+       <string>BOTTOM</string>
+      </object>
+     </void>
+     <void property="targetOffsetX">
+      <double>70.0</double>
+     </void>
+     <void property="type">
+      <object class="java.lang.Enum" id="ConnectionType0" method="valueOf">
+       <class>com.mycompany.irr00_group_project.representation.ConnectionType</class>
+       <string>INHERITANCE</string>
+      </object>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="com.mycompany.irr00_group_project.serialization.ConnectionFile">
+     <void property="midlineY">
+      <double>215.0</double>
+     </void>
+     <void property="sourceAnchor">
+      <object idref="Anchor0"/>
+     </void>
+     <void property="sourceNodeId">
+      <int>2</int>
+     </void>
+     <void property="sourceOffsetX">
+      <double>100.0</double>
+     </void>
+     <void property="targetAnchor">
+      <object idref="Anchor1"/>
+     </void>
+     <void property="targetOffsetX">
+      <double>150.0</double>
+     </void>
+     <void property="type">
+      <object idref="ConnectionType0"/>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="com.mycompany.irr00_group_project.serialization.ConnectionFile">
+     <void property="midlineX">
+      <double>365.0</double>
+     </void>
+     <void property="sourceAnchor">
+      <object class="java.lang.Enum" id="Anchor2" method="valueOf">
+       <class>com.mycompany.irr00_group_project.gui.data.Anchor</class>
+       <string>RIGHT</string>
+      </object>
+     </void>
+     <void property="sourceMultiplicity">
+      <string>1</string>
+     </void>
+     <void property="sourceNodeId">
+      <int>3</int>
+     </void>
+     <void property="sourceOffsetY">
+      <double>55.0</double>
+     </void>
+     <void property="targetAnchor">
+      <object class="java.lang.Enum" id="Anchor3" method="valueOf">
+       <class>com.mycompany.irr00_group_project.gui.data.Anchor</class>
+       <string>LEFT</string>
+      </object>
+     </void>
+     <void property="targetMultiplicity">
+      <string>0..*</string>
+     </void>
+     <void property="targetOffsetY">
+      <double>65.0</double>
+     </void>
+     <void property="type">
+      <object class="java.lang.Enum" method="valueOf">
+       <class>com.mycompany.irr00_group_project.representation.ConnectionType</class>
+       <string>AGGREGATION</string>
+      </object>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="com.mycompany.irr00_group_project.serialization.ConnectionFile">
+     <void property="midlineX">
+      <double>820.0</double>
+     </void>
+     <void property="sourceAnchor">
+      <object idref="Anchor2"/>
+     </void>
+     <void property="sourceOffsetY">
+      <double>50.0</double>
+     </void>
+     <void property="targetAnchor">
+      <object idref="Anchor3"/>
+     </void>
+     <void property="targetNodeId">
+      <int>4</int>
+     </void>
+     <void property="targetOffsetY">
+      <double>50.0</double>
+     </void>
+     <void property="type">
+      <object idref="ConnectionType0"/>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="com.mycompany.irr00_group_project.serialization.ConnectionFile">
+     <void property="midlineY">
+      <double>225.0</double>
+     </void>
+     <void property="sourceAnchor">
+      <object idref="Anchor1"/>
+     </void>
+     <void property="sourceMultiplicity">
+      <string>1</string>
+     </void>
+     <void property="sourceNodeId">
+      <int>3</int>
+     </void>
+     <void property="sourceOffsetX">
+      <double>110.0</double>
+     </void>
+     <void property="targetAnchor">
+      <object idref="Anchor0"/>
+     </void>
+     <void property="targetMultiplicity">
+      <string>*</string>
+     </void>
+     <void property="targetNodeId">
+      <int>5</int>
+     </void>
+     <void property="targetOffsetX">
+      <double>100.0</double>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="nodes">
+   <void method="add">
+    <object class="com.mycompany.irr00_group_project.serialization.ClassNodeFile">
+     <void property="attributes">
+      <object class="java.util.Collections" method="unmodifiableList">
+       <object class="java.util.ArrayList">
+        <void method="add">
+         <string>- title : String</string>
+        </void>
+        <void method="add">
+         <string>- year : int</string>
+        </void>
+       </object>
+      </object>
+     </void>
+     <void property="className">
+      <string>LibraryItem</string>
+     </void>
+     <void property="classType">
+      <object class="java.lang.Enum" method="valueOf">
+       <class>com.mycompany.irr00_group_project.representation.ClassType</class>
+       <string>ABSTRACT</string>
+      </object>
+     </void>
+     <void property="height">
+      <double>130.0</double>
+     </void>
+     <void property="layoutX">
+      <double>470.0</double>
+     </void>
+     <void property="layoutY">
+      <double>30.0</double>
+     </void>
+     <void property="operations">
+      <object class="java.util.Collections" method="unmodifiableList">
+       <object class="java.util.ArrayList">
+        <void method="add">
+         <string>+ getTitle() : String</string>
+        </void>
+        <void method="add">
+         <string>+ loanPeriod() : int</string>
+        </void>
+       </object>
+      </object>
+     </void>
+     <void property="width">
+      <double>220.0</double>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="com.mycompany.irr00_group_project.serialization.ClassNodeFile">
+     <void property="attributes">
+      <object class="java.util.Collections" method="unmodifiableList">
+       <object class="java.util.ArrayList">
+        <void method="add">
+         <string>- isbn : String</string>
+        </void>
+       </object>
+      </object>
+     </void>
+     <void property="className">
+      <string>Book</string>
+     </void>
+     <void property="height">
+      <double>110.0</double>
+     </void>
+     <void property="id">
+      <int>1</int>
+     </void>
+     <void property="layoutX">
+      <double>300.0</double>
+     </void>
+     <void property="layoutY">
+      <double>270.0</double>
+     </void>
+     <void property="operations">
+      <object class="java.util.Collections" method="unmodifiableList">
+       <object class="java.util.ArrayList">
+        <void method="add">
+         <string>+ loanPeriod() : int</string>
+        </void>
+       </object>
+      </object>
+     </void>
+     <void property="width">
+      <double>200.0</double>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="com.mycompany.irr00_group_project.serialization.ClassNodeFile">
+     <void property="attributes">
+      <object class="java.util.Collections" method="unmodifiableList">
+       <object class="java.util.ArrayList">
+        <void method="add">
+         <string>- minutes : int</string>
+        </void>
+       </object>
+      </object>
+     </void>
+     <void property="className">
+      <string>Dvd</string>
+     </void>
+     <void property="height">
+      <double>110.0</double>
+     </void>
+     <void property="id">
+      <int>2</int>
+     </void>
+     <void property="layoutX">
+      <double>660.0</double>
+     </void>
+     <void property="layoutY">
+      <double>270.0</double>
+     </void>
+     <void property="operations">
+      <object class="java.util.Collections" method="unmodifiableList">
+       <object class="java.util.ArrayList">
+        <void method="add">
+         <string>+ loanPeriod() : int</string>
+        </void>
+       </object>
+      </object>
+     </void>
+     <void property="width">
+      <double>200.0</double>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="com.mycompany.irr00_group_project.serialization.ClassNodeFile">
+     <void property="attributes">
+      <object class="java.util.Collections" method="unmodifiableList">
+       <object class="java.util.ArrayList">
+        <void method="add">
+         <string>- name : String</string>
+        </void>
+       </object>
+      </object>
+     </void>
+     <void property="className">
+      <string>Library</string>
+     </void>
+     <void property="height">
+      <double>110.0</double>
+     </void>
+     <void property="id">
+      <int>3</int>
+     </void>
+     <void property="layoutX">
+      <double>40.0</double>
+     </void>
+     <void property="layoutY">
+      <double>40.0</double>
+     </void>
+     <void property="operations">
+      <object class="java.util.Collections" method="unmodifiableList">
+       <object class="java.util.ArrayList">
+        <void method="add">
+         <string>+ lend(item : LibraryItem)</string>
+        </void>
+       </object>
+      </object>
+     </void>
+     <void property="width">
+      <double>220.0</double>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="com.mycompany.irr00_group_project.serialization.ClassNodeFile">
+     <void property="className">
+      <string>Loanable</string>
+     </void>
+     <void property="classType">
+      <object class="java.lang.Enum" method="valueOf">
+       <class>com.mycompany.irr00_group_project.representation.ClassType</class>
+       <string>INTERFACE</string>
+      </object>
+     </void>
+     <void property="height">
+      <double>100.0</double>
+     </void>
+     <void property="id">
+      <int>4</int>
+     </void>
+     <void property="layoutX">
+      <double>950.0</double>
+     </void>
+     <void property="layoutY">
+      <double>40.0</double>
+     </void>
+     <void property="operations">
+      <object class="java.util.Collections" method="unmodifiableList">
+       <object class="java.util.ArrayList">
+        <void method="add">
+         <string>+ loanPeriod() : int</string>
+        </void>
+       </object>
+      </object>
+     </void>
+     <void property="width">
+      <double>220.0</double>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="com.mycompany.irr00_group_project.serialization.ClassNodeFile">
+     <void property="attributes">
+      <object class="java.util.Collections" method="unmodifiableList">
+       <object class="java.util.ArrayList">
+        <void method="add">
+         <string>- memberId : int</string>
+        </void>
+       </object>
+      </object>
+     </void>
+     <void property="className">
+      <string>Member</string>
+     </void>
+     <void property="height">
+      <double>100.0</double>
+     </void>
+     <void property="id">
+      <int>5</int>
+     </void>
+     <void property="layoutX">
+      <double>40.0</double>
+     </void>
+     <void property="layoutY">
+      <double>300.0</double>
+     </void>
+     <void property="width">
+      <double>200.0</double>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+</java>
