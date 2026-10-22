@@ -2,8 +2,6 @@ package com.mycompany.irr00_group_project.gui.data;
 
 /**
  * Represents how the arrow can be anchored onto a node.
- * 
- * @author [student number removed]
  */
 public enum Anchor {
     TOP(false, true), BOTTOM(false, true), LEFT(true, false), RIGHT(true, false);
